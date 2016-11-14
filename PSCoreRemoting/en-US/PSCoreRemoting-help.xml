@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml">
+
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Add-OpenSSHToPath</command:name>
+<command:verb>Add</command:verb>
+<command:noun>OpenSSHToPath</command:noun>
+<maml:description><maml:para>Adds OpenSSH to the Path Variable.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Adds the path to the Open SSH directory to the Path variable.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Add-OpenSSHToPath</maml:name>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters></command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Add-OpenSSHToPath</dev:code>
+<dev:remarks><maml:para>This will add the root OpenSSH directory to the Path.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Get-PSCoreVersion</command:name>
+<command:verb>Get</command:verb>
+<command:noun>PSCoreVersion</command:noun>
+<maml:description><maml:para>Finds the Latest installed Version of PSCore.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Finds the Latest installed Version of PSCore and returns it's directory name. The Directory name matches the version on the Github releases. Will give a warning if it could not find an installed version.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Get-PSCoreVersion</maml:name>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters></command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>System.String</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Get-PSCoreVersion</dev:code>
+<dev:remarks><maml:para>Gets the Latest version of installed PowerShell Core.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Install-OpenSSH</command:name>
+<command:verb>Install</command:verb>
+<command:noun>OpenSSH</command:noun>
+<maml:description><maml:para>Installs OpenSSH from the PowerShell Github Releases.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Installs OpenSSH from the PowerShell Github Releases. By default installs the latest Version.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Install-OpenSSH</maml:name>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none"><maml:name>Version</maml:name>
+<maml:Description><maml:para>Version of OpenSSH
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Version</command:parameterValue>
+<dev:type><maml:name>Version</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none"><maml:name>Version</maml:name>
+<maml:Description><maml:para>Version of OpenSSH
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Version</command:parameterValue>
+<dev:type><maml:name>Version</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Install-OpenSSH</dev:code>
+<dev:remarks><maml:para>Installs the Latest Version of OpenSSH.
+</maml:para>
+</dev:remarks>
+</command:example>
+<command:example><maml:title>Example 2</maml:title>
+<dev:code>PS C:\&gt; Install-OpenSSH -Version '0.0.1.0'</dev:code>
+<dev:remarks><maml:para>Installs OpenSSH Version 0.0.1.0.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Install-PSCore</command:name>
+<command:verb>Install</command:verb>
+<command:noun>PSCore</command:noun>
+<maml:description><maml:para>Installs PowerShell Core from the PowerShell Github Releases.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Installs PowerShell Core from the PowerShell Github Releases. By Default Installs the Latest Release.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Install-PSCore</maml:name>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none"><maml:name>Version</maml:name>
+<maml:Description><maml:para>Version of PowerShell Core to Install
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Version</command:parameterValue>
+<dev:type><maml:name>Version</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none"><maml:name>Version</maml:name>
+<maml:Description><maml:para>Version of PowerShell Core to Install
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Version</command:parameterValue>
+<dev:type><maml:name>Version</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Install-PSCore</dev:code>
+<dev:remarks><maml:para>Installs the Latest Version of PSCore.
+</maml:para>
+</dev:remarks>
+</command:example>
+<command:example><maml:title>Example 2</maml:title>
+<dev:code>PS C:\&gt; Install-PSCore -Version '6.0.0.11'</dev:code>
+<dev:remarks><maml:para>Installs PowerShell Core Version 6.0.0.11.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Uninstall-OpenSSH</command:name>
+<command:verb>Uninstall</command:verb>
+<command:noun>OpenSSH</command:noun>
+<maml:description><maml:para>Uninstalls OpenSSH
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Uninstalls OpenSSH and gives option to reboot if installing a different version.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Uninstall-OpenSSH</maml:name>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none"><maml:name>Reboot</maml:name>
+<maml:Description><maml:para>Switch to Reboot the computer.
+</maml:para>
+</maml:Description>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none"><maml:name>Reboot</maml:name>
+<maml:Description><maml:para>Switch to Reboot the computer.
+</maml:para>
+</maml:Description>
+<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Uninstall-OpenSSH</dev:code>
+<dev:remarks><maml:para>Uninstalls OpenSSH.
+</maml:para>
+</dev:remarks>
+</command:example>
+<command:example><maml:title>Example 2</maml:title>
+<dev:code>PS C:\&gt; Uninstall-OpenSSH -Reboot</dev:code>
+<dev:remarks><maml:para>Uninstalls OpenSSH and Reboots when finished.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Uninstall-PSCore</command:name>
+<command:verb>Uninstall</command:verb>
+<command:noun>PSCore</command:noun>
+<maml:description><maml:para>Uninstalls PowerShell Core.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Uninstalls PowerShell Core. Has option to reboot if needing to Install a different Version.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Uninstall-PSCore</maml:name>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none"><maml:name>Reboot</maml:name>
+<maml:Description><maml:para>Switch to Reboot when finished.
+</maml:para>
+</maml:Description>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none"><maml:name>Reboot</maml:name>
+<maml:Description><maml:para>Switch to Reboot when finished.
+</maml:para>
+</maml:Description>
+<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Uninstall-PSCore</dev:code>
+<dev:remarks><maml:para>Uninstalls PowerShell Core.
+</maml:para>
+</dev:remarks>
+</command:example>
+<command:example><maml:title>Example 2</maml:title>
+<dev:code>PS C:\&gt; Uninstall-PSCore -Reboot</dev:code>
+<dev:remarks><maml:para>Uninstalls PowerShell Core and Reboots when finished.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Update-OpenSSHConfig</command:name>
+<command:verb>Update</command:verb>
+<command:noun>OpenSSHConfig</command:noun>
+<maml:description><maml:para>Updates OpenSSH Config.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Enables PasswordAuthentication, RSAAuthentication, PubkeyAuthentication and adds the PowerShell subsystem entry to the OpenSSH Config file.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Update-OpenSSHConfig</maml:name>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters></command:parameters>
+<command:inputTypes><command:inputType><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues><command:returnValue><dev:type><maml:name>None</maml:name>
+</dev:type>
+<maml:description><maml:para>
+</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>Example 1</maml:title>
+<dev:code>PS C:\&gt; Update-OpenSSHConfig</dev:code>
+<dev:remarks><maml:para>Updates the OpenSSH Config with the needed PowerShell Remoting settings.
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+</helpItems>
